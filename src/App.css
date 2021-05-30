@@ -1,5 +1,5 @@
 body {
-    background :  #FFE0F5;
+    background :  #e8dbff;
 }
 
 a {
@@ -31,4 +31,9 @@ h1 {
 .myFooter{
     text-align:center;
     
+}
+
+.App {
+    max-width: 900px;
+    margin : 0 auto;
 }

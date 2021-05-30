@@ -1,4 +1,4 @@
-a {
+.Phonetic a {
     border: 1px solid pink;
     text-decoration: none;
     padding: 7px 16px;
@@ -7,7 +7,7 @@ a {
     
 }
 
-a:hover {
+.Phonetic a:hover {
     background-color: rgb(255, 223, 163);
     color: white;
     border:  1px solid rgb(255, 223, 163);
