@@ -13,7 +13,7 @@ function App() {
       <main>
         <Dictionary defaultKeyword = "dictionary"/>
       </main>
-      <footer className="myFooter">Coded by Alexane Jouglar | <a href="https://github.com/AlexaneJ/my_react_dictionary" target="_blank">Open source code</a> available on GitHub</footer>
+      <footer className="myFooter">Coded by Alexane Jouglar | <a href="https://github.com/AlexaneJ/my_react_dictionary" target="_blank"  rel="noreferrer">Open source code</a> available on GitHub</footer>
       </div>
     </div>
   );
