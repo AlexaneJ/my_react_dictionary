@@ -25,8 +25,8 @@ export default function Dictionary(props) {
     function handleSubmit(event) {
         event.preventDefault();
         //event.preventDefault;
-    search();
-  }
+        search();
+      }
 
     
     function handleKeywordChange(event) {
