@@ -3,9 +3,10 @@ import axios from "axios";
 import Results from"./Results";
 import "./Dictionary.css";
 
-export default function Dictionary() {
-    let [keyword, setKeyword] = useState("");
+export default function Dictionary(props) {
+    let [keyword, setKeyword] = useState(props.defaultKeyword);
     let [results, setResults] = useState(null);
+    let [loaded, setLoaded] = useState(false);
 
     function handleResponse(response){
 
@@ -15,10 +16,7 @@ export default function Dictionary() {
 
     }
 
-    function search(event) {
-        event.preventDefault();
-        alert(`Searching for ${keyword} definition...`);
-
+    function search() {
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
         // console.log(apiUrl);
         axios.get(apiUrl).then(handleResponse);
@@ -29,12 +27,28 @@ export default function Dictionary() {
         setKeyword(event.target.value);
     }
 
+    function load() {
+        setLoaded(true);
+        search();
+    }
+
+    if(loaded) {
     return (
         <div className="Dictionary">
+            <section>
             <form onSubmit={search}>
                 <input type="search" onChange={handleKeywordChange} placeholder="Enter a word..."/>
             </form>
+            <div className="hint">
+                suggested words : sunset, cat, book, etc.
+            </div>
+            </section>
             <Results results={results}/>
+            
         </div>
     )
+    } else {
+        load();
+        return "Loading";
+    }
 }

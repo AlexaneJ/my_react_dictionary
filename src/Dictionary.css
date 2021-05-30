@@ -1,0 +1,22 @@
+.Dictionary section {
+    background :white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow: 0 10px 10px rgba(0 0 0 / 10%);
+    margin:20px 0;
+}
+
+input {
+    border-radius: 16px;
+    padding: 6px;
+    width: 100%;
+    border-style:solid;
+    border-width: 1.5px;
+    border-color: rgb(245, 167, 255);
+    box-shadow: 0 10px 10px rgba(0 0 0 / 10%);
+}
+
+.hint {
+    font-size: 10px;
+    margin-top: 5px;
+}

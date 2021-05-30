@@ -1,3 +1,26 @@
+body {
+    background :  #FFE0F5;
+}
+
+a {
+    color : rgb(255, 139, 139);
+}
+
+img {
+    padding : none;
+    margin : none;
+}
+
+h1 {
+    text-align: center;
+    padding-top: none;
+    padding-bottom: 30px;
+    margin-top: -45px;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
 .App-logo{
     block-size: 250px;
     display: block;

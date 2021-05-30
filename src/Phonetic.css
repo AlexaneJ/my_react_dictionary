@@ -1,0 +1,23 @@
+a {
+    border: 1px solid pink;
+    text-decoration: none;
+    padding: 7px 16px;
+    border-radius: 10px;
+    margin-right: 10px;
+    
+}
+
+a:hover {
+    background-color: rgb(255, 223, 163);
+    color: white;
+    border:  1px solid rgb(255, 223, 163);
+}
+
+.Phonetic {
+    height: 30px;
+}
+
+.phonText {
+    opacity:0.5;
+    font-weight: bold;
+}
